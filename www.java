@@ -1,7 +1,4 @@
-
-
-
-Customer.java
+//Customer.java
 public class Customer {
 private String name;
 private String address;
@@ -32,13 +29,7 @@ this.panCardNumber = panCardNumber;
 }
 }
 
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-Account.java
+//Account.java
 public class Account {
 private int accountNumber;
 private double balance;
@@ -88,11 +79,8 @@ failed.");
 }
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-Transaction.java
+//Transaction.java
 public class Transaction {
 public static void deposit(Account account, double amount) {
 account.deposit(amount);
@@ -102,7 +90,7 @@ account.withdraw(amount);
 }
 }
 
-Loan.java
+//Loan.java
 public class Loan {
 private int loanId;
 private String loanType;
@@ -133,7 +121,7 @@ this.loanAmount = loanAmount;
 }
 }
 
-Bank.java
+//Bank.java
 import java.util.ArrayList;
 import java.util.List;
 public class Bank {
@@ -172,9 +160,8 @@ loan.getLoanType() + ", Amount: " + loan.getLoanAmount());
 }
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-OnlineBankingSystem.java
+
+//OnlineBankingSystem.java
 import java.util.Scanner;
 public class OnlineBankingSystem {
 private static Scanner scanner = new Scanner(System.in);
@@ -259,10 +246,10 @@ scanner.close();
 
 
 
-Multithreading Example
-To illustrate multithreading, let's simulate concurrent transactions using threads.
-Here's how you can extend the OnlineBankingSystem class to create multiple
-threads for deposit and withdrawal operations:
+//Multithreading Example
+// To illustrate multithreading, let's simulate concurrent transactions using threads.
+// Here's how you can extend the OnlineBankingSystem class to create multiple
+// threads for deposit and withdrawal operations:
 
 import java.util.Scanner;
 public class OnlineBankingSystem {
@@ -282,4 +269,6 @@ bank.addAccount(account2);
 boolean exit = false;
 while (!exit) {
 System.out.println("Welcome to Online Banking System");
-System.out.println("1.
+System.out.println("1.Display");}
+}
+}
